@@ -10,7 +10,7 @@ class Owner
       @@all << self
       @@count +=1
       @species = "human"
-      @pets = {:fishes => [], :dogs = > [], :cats => []}    
+      @pets = {:fishes => [], :dogs = > [], :cats => []}
     end
     def self.all
       @@all
@@ -37,13 +37,13 @@ class Owner
 
     def walk_dogs
       @pets[:dogs].each do |dog|
-      dog.mood = "happy"  
+      dog.mood = "happy"
     end
 
     def play_with_cats
       @pets[:cats].each do |cat|
-      cat.mood = "happy"  
-    end  
+      cat.mood = "happy"
+    end
   end
 
     def feed_fish
